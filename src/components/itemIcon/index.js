@@ -1,8 +1,10 @@
 import React from 'react'
 
-const ItemIcon = () => {
+const ItemIcon = ({product, handleClick}) => {
+
+
   return (
-    <div>ItemIcon</div>
+    <div onClick={handleClick}>{product.name}</div>
   )
 }
 
