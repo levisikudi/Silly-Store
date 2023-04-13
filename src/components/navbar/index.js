@@ -11,14 +11,14 @@ const Navbar = () => {
     <div>
       <nav id="navbar" className="navbar w-100 navbar-expand-md sticky-top navbar-dark bg-black  ">
         <div className="container ">
-            <div id='logo' className="navbar-brand d-flex r">
-              <p className='d-flex align-self-center'>Silly</p>  
+            <div id='logo' className="navbar-brand d-flex">
+              <p>Silly</p>  
             </div>
 
             <button className="navbar-toggler" type='button' data-bs-toggle="collapse" data-bs-target="#expandation">
                 <span className="navbar-toggler-icon" ></span>
             </button>
-            <div className="collapse navbar-collapse justify-content-end" id="expandation">
+            <div className="collapse navbar-collapse justify-content-around" id="expandation">
                 <ul className="navbar-nav navbar-nav-scroll">
 
                   <li className="nav-item mx-4">
