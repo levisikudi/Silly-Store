@@ -5,6 +5,7 @@ import EditPage from './pages/Edit ';
 import HomePage from './pages/Home';
 import ItemPage from './pages/Item';
 import Navbar from './components/navbar'
+import Footer from './components/footer';
 
 
 function App() {
@@ -19,7 +20,9 @@ function App() {
          <Route path='/create' element={<CreatePage />}/>
          <Route path='/' element={<HomePage />}/>
          <Route path='/*' element={<Navigate to='/' />}/>
-      </Routes>
+        </Routes>
+      <Footer />
+
     
     </div>
   );

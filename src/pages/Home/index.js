@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from '../../components/footer'
 import Banner from '../../components/headerBanner'
 import ProductDisplay from '../../components/productDisplay'
 
@@ -8,7 +7,6 @@ const HomePage = () => {
     <div>
       <Banner />
       <ProductDisplay/>
-      <Footer />
     </div>
   )
 }

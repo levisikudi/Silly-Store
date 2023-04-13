@@ -28,14 +28,12 @@ const Navbar = () => {
                     <Link to ="/create" className="nav-link">Create Item</Link>
                   </li>
 
-                    {!location === '/' ?
-                        
+                    {location === '/' ?    
+                    <></>
+                    :
                   <li className="nav-item mx-4">
                     <NavSearch />
                   </li>
-                    :
-                    <>
-                    </>
                     }
 
                 </ul> 
