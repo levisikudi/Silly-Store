@@ -1,6 +1,8 @@
 const express = require('express')
 const path = require('path')
 const logger = require('morgan')
+const { create } = require('./models/product')
+const Product = require('./models/product')
 
 // cross origin access 
 const cors = require('cors')
