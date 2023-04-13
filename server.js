@@ -7,7 +7,6 @@ const Product = require('./models/product')
 // cross origin access 
 const cors = require('cors')
 
-
 const app = express()
 
 //access
