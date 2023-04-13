@@ -13,6 +13,10 @@ app.use(cors({
     origin: "*"
 }))
 
+// configs
+require('dotenv').config();
+require('./config/database.js');
+
 
 // logs different requests to our server
 app.use(logger('dev'))
@@ -22,8 +26,6 @@ app.use(express.json())
 
 // serve our build folder
 app.use(express.static(path.join(__dirname, 'build')))
-
-
 
 
 
