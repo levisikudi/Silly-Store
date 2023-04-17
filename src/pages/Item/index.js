@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import ItemForm from '../../components/itemForm'
 import { ProductContext } from '../../context/productContext'
+import './index.css'
 
 
 const ItemPage = () => {
@@ -9,9 +9,15 @@ const ItemPage = () => {
   console.log(selectedProduct);
 
   return (
-    <div>
-        {selectedProduct.name}
+    <section id="item-page">
+        
+    <div id='left' className='d-flex justify-content-center align-items-center'>
+      <img className="img-fluid w-75" src={selectedProduct.imageURL} alt={selectedProduct.name}/>
     </div>
+
+    <div id="right">{selectedProduct.name}</div>
+
+    </section>
   )
 }
 

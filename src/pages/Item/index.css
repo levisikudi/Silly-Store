@@ -1,0 +1,16 @@
+#item-page{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#left, #right{
+   min-height: 90vh;
+}
+
+#right{
+    background-color: #ffffff;
+}
+
+img{
+    overflow: hidden;
+}
