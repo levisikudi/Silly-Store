@@ -1,11 +1,10 @@
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import NavSearch from '../navSearch';
 
 
 const Navbar = () => {
 
-  const location = useLocation().pathname;
 
   return (
     <div>
@@ -22,19 +21,14 @@ const Navbar = () => {
                 <ul className="navbar-nav navbar-nav-scroll">
 
                   <li className="nav-item mx-4">
+                    <NavSearch/>
+                  </li>
+                  <li className="nav-item mx-4">
                     <Link to ='/' className="nav-link">Home</Link>
                   </li>
                   <li className="nav-item mx-4">
                     <Link to ="/create" className="nav-link">Create Item</Link>
-                  </li>
-
-                    {location === '/' ?    
-                    <></>
-                    :
-                  <li className="nav-item mx-4">
-                    <NavSearch />
-                  </li>
-                    }
+                  </li>   
 
                 </ul> 
             </div>       

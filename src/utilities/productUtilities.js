@@ -8,3 +8,15 @@ export const getProducts = async () =>{
 
     return serverResponse.data
 }
+
+export const createItem = async (formData) =>{
+    console.log(formData);
+
+    let serverResponse = await axios({
+        method: 'POST',
+        url: '/create_product',
+        data: formData
+    })
+
+    return serverResponse;
+}
