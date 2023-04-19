@@ -32,9 +32,9 @@ app.use(express.static(path.join(__dirname, 'build')))
 
 //  ROUTES //
 
-app.get('/', (req, res) =>{
-    res.send("The Server is serving")
-})
+// app.get('/', (req, res) =>{
+//     res.send("The Server is serving")
+// })
 
 
 // /get_products - responds with all products in your collection
