@@ -9,14 +9,15 @@ const cors = require('cors')
 
 const app = express()
 
+// configs
+require('dotenv').config();
+require('./config/database.js');
+
 //access
 app.use(cors({
     origin: "*"
 }))
 
-// configs
-require('dotenv').config();
-require('./config/database.js');
 
 
 // logs different requests to our server
