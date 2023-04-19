@@ -102,6 +102,8 @@ app.put('/update_product/:productId', async (req, res) =>{
 })
 
 app.put('/update_one', async (req, res) =>{
+    console.log(`this is the`);
+    console.log(req.body);
     let response = await Product.findOneAndUpdate({ _id: req.query.productId }, req.body, { new: true });
     res.send(response);
 })

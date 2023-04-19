@@ -1,0 +1,21 @@
+#itemBox {
+    width: 250px;
+    text-align: center;
+    background-color: #f9f3da;
+    padding: 0 15px;
+    transition: all .2s ease-in-out;
+    /* background-color: #f9f3da;
+    box-shadow: #1f352c;
+    border-radius: 25px; */
+}
+
+#itemBox:hover {
+    transform: scale(1.03);
+}
+
+#img{
+    object-fit: contain;
+    width: 10rem;
+    height: 15rem;
+    cursor: pointer;
+}

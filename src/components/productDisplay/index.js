@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getProducts } from '../../utilities/productUtilities'
 import ItemIcon from '../itemIcon'
+import './index.css'
 
 const ProductDisplay = () => {
 
@@ -33,7 +34,7 @@ const ProductDisplay = () => {
 
 
   return (
-    <div>
+    <div id='product-container' className='d-flex justify-content-evenly gap-4'>
         <>{productsJSX}</>
     </div>
   )

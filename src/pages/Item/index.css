@@ -15,4 +15,5 @@
 
 img{
     overflow: hidden;
+    object-fit: contain;
 }

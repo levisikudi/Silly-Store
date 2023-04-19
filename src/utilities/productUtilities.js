@@ -20,3 +20,16 @@ export const createItem = async (formData) =>{
 
     return serverResponse;
 }
+
+export const buyOne = async (quantity, id)=>{
+    console.log(id)
+    console.log(quantity);
+
+    let serverResponse = await axios({
+        method: 'PUT',
+        url: `/update_one?productId=${id}`,
+        data: {quantity} 
+    })
+
+    return serverResponse
+}
